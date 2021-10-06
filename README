@@ -1,0 +1,8 @@
+comment spécifié le config dans un subfolder, j'ai du le mettre a la racine
+
+j'ai appris ce qu'est un logger
+
+? je ne sais pas utilisé les options de mongoose.connect
+
+? pourquoi il est nécessaire de créer un schéma et un doc ?
+? pourquoi on passe par un middleware pour hasher le pwd ?
