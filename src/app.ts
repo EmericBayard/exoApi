@@ -3,13 +3,14 @@ import config from "config";
 import log from "./api/v1/helpers/logger";
 import connect  from "./config/MongoDatabase";
 import routes from "./api/v1/routes/open/routes";
-
+import { deserializeUser } from "./api/v1/middlewares";
 const port = config.get("port") as number;
 const host = config.get("host") as string;
 
 const app = express();
 
 app.use(express.json());
+app.use(deserializeUser);
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(port, host, () => {

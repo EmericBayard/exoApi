@@ -7,3 +7,6 @@ j'ai appris ce qu'est un logger
 ? pourquoi il est nécessaire de créer un schéma et un doc ?
 ? pourquoi on passe par un middleware pour hasher le pwd ?
 ? j'ai pas de provider pourquoi ?
+? a quoi sert l'user agent ?
+? je pige pas vraiment le refresh token
+?get docuded SessionService ? SessionService ?

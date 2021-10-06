@@ -1,6 +1,8 @@
 import User, { UserDocument } from '../models/UserModel';
-import { DocumentDefinition } from "mongoose";
+import { DocumentDefinition, FilterQuery } from "mongoose";
 import  { omit }  from "lodash";
+
+
 export async function createUser(input: DocumentDefinition<UserDocument>){
     try {
         return await User.create(input);
@@ -9,8 +11,8 @@ export async function createUser(input: DocumentDefinition<UserDocument>){
     }
 }
 
-function findUser() {
-
+export async function findUser(query: FilterQuery<UserDocument>) {
+    return User.findOne(query).lean();
 }
 
 
